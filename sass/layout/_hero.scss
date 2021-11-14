@@ -1,0 +1,27 @@
+.heero-background {
+  margin: 0 auto;
+  display: flex;
+  max-width: 1600px;
+  border-color: rgba(47, 48, 58, 0.4);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/businessolution.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.top-heero {
+  background-color: var(--section-background-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.solution {
+  @include fonts(44px, 900, 1.36, 0.06em);
+  color: var(--nav-text-color);
+  width: 696px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
+}

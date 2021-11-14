@@ -1,0 +1,30 @@
+.top-list {
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.top-list-section {
+  display: flex;
+}
+.list-style-main:not(:last-child) {
+  margin-right: 30px;
+}
+.top-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--img-background-color);
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.list-main {
+  @include fonts(14px, 700, 1.14, 0.03em);
+  color: var(--primary-text-color);
+  margin-bottom: 10px;
+}
+.p-main {
+  @include fonts(14px, 400, 1.71, 0.03em);
+  color: var(--secondary-text-color);
+}

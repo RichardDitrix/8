@@ -1,0 +1,79 @@
+.header {
+  padding: 25px 0px;
+  border-bottom: 1px solid var(--border-color);
+}
+.header__container {
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  margin-right: 95px;
+}
+.web {
+  font-family: Raleway;
+  @include fonts(26px, 700, 1.19, 0.03em);
+  color: var(--web-color);
+}
+.studio {
+  font-family: Raleway;
+  @include fonts(26px, 700, 1.19, 0.03em);
+  color: var(--studio-color);
+}
+.header__nav {
+  display: flex;
+}
+.header__list {
+  display: flex;
+  position: relative;
+  width: 295px;
+}
+.header__item {
+  position: relative;
+}
+.header__item:not(:last-child) {
+  margin-right: 50px;
+}
+.current {
+  color: var(--accent-color);
+  &::after {
+    content: " ";
+    background-color: var(--accent-color);
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    display: block;
+    position: absolute;
+    top: 46px;
+  }
+}
+
+.header__link {
+  @include fonts(14px, 500, 1.14, 0.02em);
+  color: var(--header-text-color-link);
+}
+.header__connect {
+  display: flex;
+  margin-left: auto;
+}
+.header__contacts {
+  display: flex;
+}
+.header__contacts__list:not(:last-child) {
+  margin-right: 50px;
+}
+.header__adress {
+  @include fonts(14px, 500, 1.14, 0.02em);
+  color: var(--header-text-color);
+}
+.header__svg__link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__svg {
+  fill: currentColor;
+  display: flex;
+  margin-right: 10px;
+}
