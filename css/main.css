@@ -747,22 +747,10 @@ img {
   line-height: 1.62;
   letter-spacing: 0.06em;
   color: var(--nav-text-color);
-  width: 696px;
+  width: 360px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 30px;
-}
-
-@media screen and (min-width: 480px) {
-  .solution {
-    width: 360px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .solution {
-    width: 360px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -783,11 +771,12 @@ img {
 
 .top-list-section {
   display: flex;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 480px) {
   .top-list-section {
-    display: block;
+    justify-content: center;
   }
 }
 
@@ -799,6 +788,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .top-list-section {
+    flex-direction: row;
     display: flex;
   }
 }
@@ -812,10 +802,24 @@ img {
   justify-content: center;
   align-items: center;
   background-color: var(--img-background-color);
-  width: 270px;
+  width: 450px;
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .top-svg {
+    width: 354px;
+    height: 120px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .top-svg {
+    width: 270px;
+    height: 120px;
+  }
 }
 
 .list-main {
@@ -837,31 +841,13 @@ img {
 
 @media screen and (min-width: 480px) {
   .duty__heading {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+    display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
   .duty__heading {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+    display: none;
   }
 }
 

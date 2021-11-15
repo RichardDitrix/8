@@ -1,17 +1,20 @@
 .top-list {
   display: flex;
+  //   justify-content: center;
   padding-left: 15px;
   padding-right: 15px;
 }
 .top-list-section {
   display: flex;
+  flex-direction: column;
   @media screen and (min-width: 480px) {
-    display: block;
+    justify-content: center;
   }
   @media screen and (min-width: 768px) {
     display: block;
   }
   @media screen and (min-width: 1200px) {
+    flex-direction: row;
     display: flex;
   }
 }
@@ -23,10 +26,18 @@
   justify-content: center;
   align-items: center;
   background-color: var(--img-background-color);
-  width: 270px;
+  width: 450px;
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 120px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    height: 120px;
+  }
 }
 .list-main {
   @include fonts(14px, 700, 1.14, 0.03em);
