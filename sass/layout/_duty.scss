@@ -9,12 +9,7 @@
     display: block;
   }
 }
-.duty-team {
-  text-align: center;
-  margin-bottom: 50px;
-  @include fonts(36px, 700, 1.16, 0.03em);
-  color: var(--primary-text-color);
-}
+
 .duty-list {
   display: flex;
 }

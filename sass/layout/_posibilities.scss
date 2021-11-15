@@ -19,7 +19,14 @@
   }
 }
 .list-style-main:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+  }
 }
 .top-svg {
   display: flex;
@@ -43,6 +50,11 @@
   @include fonts(14px, 700, 1.14, 0.03em);
   color: var(--primary-text-color);
   margin-bottom: 10px;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
 }
 .p-main {
   @include fonts(14px, 400, 1.71, 0.03em);

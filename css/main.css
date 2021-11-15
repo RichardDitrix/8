@@ -239,7 +239,14 @@ img {
 }
 
 .padding-zeero {
-  padding-top: 0px;
+  padding: 0px;
+}
+
+@media screen and (min-width: 1200px) {
+  .padding-zeero {
+    padding-top: 0px;
+    padding-bottom: 94px;
+  }
 }
 
 .btn {
@@ -794,7 +801,20 @@ img {
 }
 
 .list-style-main:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .list-style-main:not(:last-child) {
+    flex-direction: row;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list-style-main:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .top-svg {
@@ -829,6 +849,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .p-main {
@@ -855,16 +876,6 @@ img {
   .duty__heading {
     display: block;
   }
-}
-
-.duty-team {
-  text-align: center;
-  margin-bottom: 50px;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
 }
 
 .duty-list {
@@ -901,11 +912,47 @@ img {
   margin: 0 auto;
 }
 
+.duty-team {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .duty-team {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
+}
+
 .duty-team-list {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-left: -30px;
   margin-bottom: -30px;
+}
+
+@media screen and (min-width: 768px) {
+  .duty-team-list {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .duty-team-list {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .duty-style-list {
@@ -924,7 +971,7 @@ img {
 }
 
 .names {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.18;
