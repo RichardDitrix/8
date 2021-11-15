@@ -1,7 +1,7 @@
 .heero-background {
   margin: 0 auto;
   display: flex;
-  max-width: 1600px;
+  width: 100%;
   border-color: rgba(47, 48, 58, 0.4);
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -11,17 +11,56 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/mobile-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/tablet-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1600px;
+  }
 }
 .top-heero {
   background-color: var(--section-background-color);
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 .solution {
-  @include fonts(44px, 900, 1.36, 0.06em);
+  @include fonts(26px, 900, 1.62, 0.06em);
   color: var(--nav-text-color);
   width: 696px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 30px;
+  @media screen and (min-width: 480px) {
+    width: 360px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 360px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+    @include fonts(44px, 900, 1.36, 0.06em);
+  }
 }

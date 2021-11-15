@@ -5,6 +5,15 @@
 }
 .top-list-section {
   display: flex;
+  @media screen and (min-width: 480px) {
+    display: block;
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .list-style-main:not(:last-child) {
   margin-right: 30px;
