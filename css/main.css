@@ -1042,18 +1042,21 @@ img {
   .client-item {
     flex-basis: calc(100% / 2 - 30px);
     margin-bottom: 30px;
+    width: 210px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .client-item {
     flex-basis: calc(100% / 3 - 30px);
+    width: 226px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .client-item {
     flex-basis: calc(100% / 6 - 30px);
+    width: 170px;
   }
 }
 
