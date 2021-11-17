@@ -801,8 +801,8 @@ img {
 
 @media screen and (min-width: 1200px) {
   .top-list-section {
-    flex-direction: row;
     display: flex;
+    flex-direction: row;
   }
 }
 
