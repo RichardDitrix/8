@@ -11,13 +11,19 @@
 }
 .web {
   font-family: Raleway;
-  @include fonts(26px, 700, 1.19, 0.03em);
+  @include fonts(24px, 700, 1.16, 0.03em);
   color: var(--web-color);
+  @media screen and (min-width: 1200px) {
+    @include fonts(26px, 700, 1.19, 0.03em);
+  }
 }
 .studio {
   font-family: Raleway;
-  @include fonts(26px, 700, 1.19, 0.03em);
+  @include fonts(24px, 700, 1.16, 0.03em);
   color: var(--studio-color);
+  @media screen and (min-width: 1200px) {
+    @include fonts(26px, 700, 1.19, 0.03em);
+  }
 }
 .header__nav {
   display: flex;

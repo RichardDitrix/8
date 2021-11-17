@@ -19,9 +19,8 @@
   background-repeat: no-repeat;
   background-size: 106px 60px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+  margin-right: 30px;
+
   &:hover,
   &:focus {
     border-color: var(--accent-color);
