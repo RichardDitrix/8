@@ -1,25 +1,19 @@
 .footer {
-  @include fonts(14px, 400, 1.71, 0.03em);
   color: var(--footer-color);
   background-color: var(--footer-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
 .footer__container {
-  width: 100%;
-  text-align: center;
-  @media screen and (min-width: 768px) {
-  }
   @media screen and (min-width: 1200px) {
     display: flex;
-    justify-content: baseline;
     align-items: baseline;
-    text-align: left;
   }
 }
 .footer__tablet {
   @media screen and (min-width: 768px) {
     display: flex;
+    align-items: baseline;
   }
 }
 .studio__footer {
