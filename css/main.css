@@ -1345,8 +1345,8 @@ img {
 }
 
 .footer__email {
-  width: 100%;
   display: flex;
+  width: 100%;
 }
 
 @media screen and (max-width: 1199px) {
@@ -1363,13 +1363,13 @@ img {
   }
 }
 
-.footer__Label {
-  display: block;
+.footer__label {
   width: 100%;
+  display: block;
 }
 
 @media screen and (max-width: 1199px) {
-  .footer__Label {
+  .footer__label {
     margin-bottom: 20px;
   }
 }
@@ -1408,5 +1408,11 @@ img {
     width: 358px;
     margin-right: 12px;
   }
+}
+
+.footer__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /*# sourceMappingURL=main.css.map */
