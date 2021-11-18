@@ -1201,9 +1201,52 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__tablet {
+    margin-bottom: 60px;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer_adress {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer_adress {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer_adress {
+    min-width: 230px;
+    margin-right: 70px;
+  }
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+}
+
 .studio__footer {
   font-family: Raleway;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
   color: var(--contacts-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .studio__footer {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+  }
 }
 
 .footer__contacts {
@@ -1211,10 +1254,13 @@ img {
   margin-bottom: 60px;
 }
 
-.adress {
+.footer__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer__adress__text {
   font-family: Roboto;
   font-style: normal;
-  display: block;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -1232,14 +1278,15 @@ img {
   color: var(--footer_link-color);
 }
 
-.footer__flex {
-  display: block;
-  margin-bottom: 60px;
+@media screen and (max-width: 767px) {
+  .footer__flex {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .footer__flex {
-    margin-left: 70px;
+    margin-right: 93px;
   }
 }
 
@@ -1250,6 +1297,12 @@ img {
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer__flex__h3 {
+    text-align: center;
+  }
 }
 
 .footer__flex__list {
@@ -1307,8 +1360,6 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__email {
     align-items: flex-end;
-    flex-direction: row;
-    margin-left: 93px;
   }
 }
 
@@ -1334,22 +1385,12 @@ img {
   color: var(--contacts-color);
 }
 
-@media screen and (min-width: 1200px) {
-  .footer__span {
-    justify-content: start;
-    align-items: center;
-  }
-}
-
 .input {
   display: block;
   min-height: 50px;
   width: 100%;
   margin: 0 auto;
-  padding-left: 16px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-right: 5px;
+  padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: var(--footer-background-color);
@@ -1365,6 +1406,7 @@ img {
 @media screen and (min-width: 1200px) {
   .input {
     width: 358px;
+    margin-right: 12px;
   }
 }
 /*# sourceMappingURL=main.css.map */
