@@ -12,7 +12,7 @@
   }
   @media screen and (min-width: 1200px) {
     display: flex;
-    justify-content: center;
+    justify-content: baseline;
     align-items: baseline;
     text-align: left;
   }
@@ -125,7 +125,6 @@
   @media screen and (min-width: 1200px) {
     justify-content: start;
     align-items: center;
-    margin-bottom: -20px;
   }
 }
 .input {
@@ -141,7 +140,6 @@
   border-radius: 4px;
   background-color: var(--footer-background-color);
   color: var(--contacts-color);
-  margin-bottom: 20px;
   @media screen and (min-width: 480px) {
     width: 450px;
   }

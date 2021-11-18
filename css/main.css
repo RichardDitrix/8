@@ -1199,7 +1199,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__container {
     display: flex;
-    justify-content: center;
+    justify-content: baseline;
     align-items: baseline;
     text-align: left;
   }
@@ -1348,7 +1348,6 @@ img {
   .footer__span {
     justify-content: start;
     align-items: center;
-    margin-bottom: -20px;
   }
 }
 
@@ -1365,7 +1364,6 @@ img {
   border-radius: 4px;
   background-color: var(--footer-background-color);
   color: var(--contacts-color);
-  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 480px) {
