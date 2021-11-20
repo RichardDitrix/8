@@ -116,6 +116,7 @@
 .footer__email {
   display: flex;
   width: 100%;
+
   @media screen and (max-width: 1199px) {
     flex-direction: column;
     align-items: center;
@@ -126,14 +127,14 @@
   }
 }
 .footer__label {
-  width: 100%;
   display: block;
+  width: 100%;
+
   @media screen and (max-width: 1199px) {
     margin-bottom: 20px;
   }
 }
 .footer__span {
-  width: 100%;
   display: block;
   margin-bottom: 20px;
   @include fonts(14px, 700, 1.14, 0.03em);
@@ -143,6 +144,7 @@
   display: block;
   min-height: 50px;
   width: 100%;
+  margin: 0 auto;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
