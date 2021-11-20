@@ -1,7 +1,5 @@
 .heero-background {
   margin: 0 auto;
-  display: flex;
-  width: 100%;
   border-color: rgba(47, 48, 58, 0.4);
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -11,11 +9,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
   @media screen and (min-width: 768px) {
-    width: 768px;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -26,12 +20,12 @@
     background-position: center;
   }
   @media screen and (min-width: 1200px) {
-    width: 1600px;
+    max-width: 1600px;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/deskhero-x1.jpg);
+      url(../images/desktophero-x1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
