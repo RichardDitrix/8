@@ -159,10 +159,23 @@
   }
 }
 .footer__btn {
+  width: 200px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 50px;
+  background-color: var(--web-color);
+  color: var(--nav-text-color);
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  @include fonts(16px, 700, 1.87, 0.06em);
+  &:hover,
+  &:focus {
+    background-color: var(--btn-spec-color);
+  }
+  &-svg {
+    margin-left: 10px;
+    fill: var(--nav-text-color);
+  }
 }
-// footer
