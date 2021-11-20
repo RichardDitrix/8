@@ -49,10 +49,13 @@
 .solution {
   @include fonts(26px, 900, 1.62, 0.06em);
   color: var(--nav-text-color);
-  width: 360px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 30px;
+  @media screen and (max-width: 1199px) {
+    width: 360px;
+  }
   @media screen and (min-width: 1200px) {
     width: 696px;
     @include fonts(44px, 900, 1.36, 0.06em);
