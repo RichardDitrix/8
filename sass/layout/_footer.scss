@@ -128,9 +128,8 @@
 }
 .footer__label {
   display: block;
-  width: 100%;
-
   @media screen and (max-width: 1199px) {
+    width: 100%;
     margin-bottom: 20px;
   }
 }
@@ -174,8 +173,8 @@
   &:focus {
     background-color: var(--btn-spec-color);
   }
-  &-svg {
-    margin-left: 10px;
-    fill: var(--nav-text-color);
-  }
+}
+.footer__label__svg {
+  margin-left: 10px;
+  fill: var(--nav-text-color);
 }

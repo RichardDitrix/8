@@ -1365,11 +1365,11 @@ img {
 
 .footer__label {
   display: block;
-  width: 100%;
 }
 
 @media screen and (max-width: 1199px) {
   .footer__label {
+    width: 100%;
     margin-bottom: 20px;
   }
 }
@@ -1430,7 +1430,7 @@ img {
   background-color: var(--btn-spec-color);
 }
 
-.footer__btn-svg {
+.footer__label__svg {
   margin-left: 10px;
   fill: var(--nav-text-color);
 }
