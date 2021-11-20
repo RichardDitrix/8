@@ -1,6 +1,9 @@
 .header {
-  padding: 25px 0px;
+  padding: 10px 0px;
   border-bottom: 1px solid var(--border-color);
+  @media screen and (min-width: 1200px) {
+    padding: 25px 0px;
+  }
 }
 .header__container {
   display: flex;
@@ -29,9 +32,12 @@
   display: flex;
 }
 .header__list {
-  display: flex;
+  display: none;
   position: relative;
   width: 295px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 .header__item {
   position: relative;
@@ -62,7 +68,11 @@
   margin-left: auto;
 }
 .header__contacts {
-  display: flex;
+  //   display: flex;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 .header__contacts__list:not(:last-child) {
   margin-right: 50px;

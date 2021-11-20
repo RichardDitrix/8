@@ -1,0 +1,49 @@
+.header__modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 530px;
+  padding: 40px;
+  min-height: 580px;
+  background-color: var(--contacts-color);
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+// 1st UL
+.header__modal__list {
+}
+.header__modal__item {
+}
+.header__modal__link {
+}
+// 2nd UL
+.header__modal__contacts {
+}
+.header__modal__contacts__list {
+}
+.header__modal__adress {
+}
+.header__modal__svg__link {
+}
+.header__modal__svg {
+}
+// 3d UL
+.header__modal__society {
+}
+.header__society__item {
+}
+.header__society__link {
+}
+.header__mobile__menu {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 15px;
+}
+.header__mobile__menu--open {
+}
