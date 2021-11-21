@@ -61,13 +61,13 @@
             </li>
           </ul>
         </div>
-		  <button type="button" class="header__mobile__menu" data-mobile-open>
+		  <button type="button" class="header__mobile__menu" data-menu-open>
 			<svg class="header__mobile__menu--open" width="40" height="40">
 			  <use href="./images/symbol-defs.svg#icon-mobmenu"></use>
 			</svg>
 		 </button>
       </div>
-		<div class="header__modal backdrop is-hidden" mobile-modal>
+		<div class="header__modal backdrop is-hidden1" data-menu>
 			 <ul class="header__modal__list">
 				<li class="header__modal__item">
 					<a class="current header__modal__link link btn " href="#">Студия</a>
@@ -84,35 +84,29 @@
 			 <ul class="header__modal__contacts">
             <li class="header__moda__contacts__list">
               <a
-                class="header__modal__adress link  header__modal__svg__link btn"
+                class="header__modal__phone link  btn"
                 href="mailto:info@devstudio.com"
               >
-                <svg class="header__modal__svg" width="16" height="12">
-                  <use href="./images/symbol-defs.svg#icon-email"></use>
-                </svg>
-                info@devstudio.com</a
+				  +38 096 111 11 11</a
               >
             </li>
             <li class="header__modal__contacts__list">
 					<a
-					  class="header__modal__adress link  header__modal__svg__link btn"
+					  class="header__modal__emailadress link   btn"
 					  href="tel:+380961111111"
 					>
-					  <svg class="header__modal__svg" width="10" height="16">
-						 <use href="./images/symbol-defs.svg#icon-tel"></use>
-					  </svg>
-					  +38 096 111 11 11</a
+					info@devstudio.com</a
 					>
 				 </li>
             </li>
           </ul>
 			 <ul class="header__modal__society">
-				 <li class="header__society__item"><a href="#" class="header__society__link">Instagram</a></li>
-				 <li class="header__society__item"><a href="#" class="header__society__link">Twitter</a></li>
-				 <li class="header__society__item"><a href="#" class="header__society__link">Facebook</a></li>
-				 <li class="header__society__item"><a href="#" class="header__society__link">LinkedIn</a></li>
+				 <li class="header__society__item"><a href="#" class="header__society__link link">Instagram</a></li>
+				 <li class="header__society__item"><a href="#" class="header__society__link link">Twitter</a></li>
+				 <li class="header__society__item"><a href="#" class="header__society__link link">Facebook</a></li>
+				 <li class="header__society__item"><a href="#" class="header__society__link link">LinkedIn</a></li>
 			 </ul>
-			 <button class="modal-svg-link" type="button" data-mobile-close>
+			 <button class="modal-svg-link" type="button" data-menu-close>
 				<svg class="modal-close-link" width="11" height="11">
 				  <use href="./images/symbol-defs.svg#icon-xmark"></use>
 				</svg>
@@ -125,7 +119,7 @@
           <h1 class="solution">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
           <button
             type="button"
-            class="btn-services btn-main modal-closed"
+            class="btn-services btn-main "
             data-modal-open
           >
             Заказать услугу
@@ -521,7 +515,7 @@
         </form>
       </div>
     </footer>
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <p class="modal-paragraph">Оставьте свои данные, мы вам перезвоним</p>
         <form class="modal-form">
@@ -591,8 +585,8 @@
           </svg>
         </button>
       </div>
-    </div> -->
-    <script src="./js/modal-menu.js"></script> 
+    </div>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script> 
   </body>
 </html>

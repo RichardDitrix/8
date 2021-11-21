@@ -13,26 +13,35 @@
 .header__modal__list {
 }
 .header__modal__item {
+  @include fonts(40px, 500, 1.74, 0.02em);
 }
 .header__modal__link {
+  color: var(--primary-text-color);
 }
 // 2nd UL
 .header__modal__contacts {
 }
 .header__modal__contacts__list {
+  color: var(--primary-text-color);
 }
-.header__modal__adress {
+.header__modal__emailadress {
+  @include fonts(24px, 500, 1.16, 0.02em);
+  color: var(--header-text-color);
 }
-.header__modal__svg__link {
+.header__modal__phone {
+  color: var(--link-color);
+  @include fonts(34px, 500, 1.17, 0.02em);
 }
-.header__modal__svg {
-}
+
 // 3d UL
 .header__modal__society {
+  display: flex;
 }
 .header__society__item {
+  display: flex;
 }
 .header__society__link {
+  color: var(--link-color);
 }
 .header__mobile__menu {
   width: 40px;
@@ -44,6 +53,7 @@
   justify-content: center;
   position: absolute;
   right: 15px;
+  cursor: pointer;
 }
 .header__mobile__menu--open {
 }

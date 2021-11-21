@@ -501,6 +501,49 @@ img {
   transition: transform 3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.header__modal__item {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.74;
+  letter-spacing: 0.02em;
+}
+
+.header__modal__link {
+  color: var(--primary-text-color);
+}
+
+.header__modal__contacts__list {
+  color: var(--primary-text-color);
+}
+
+.header__modal__emailadress {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: var(--header-text-color);
+}
+
+.header__modal__phone {
+  color: var(--link-color);
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.header__modal__society {
+  display: flex;
+}
+
+.header__society__item {
+  display: flex;
+}
+
+.header__society__link {
+  color: var(--link-color);
+}
+
 .header__mobile__menu {
   width: 40px;
   height: 40px;
@@ -511,6 +554,7 @@ img {
   justify-content: center;
   position: absolute;
   right: 15px;
+  cursor: pointer;
 }
 
 .textarea {
