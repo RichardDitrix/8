@@ -19,6 +19,7 @@
   --img-background-color: #f5f4fa;
   --footer_link-color: rgba(255, 255, 255, 0.6);
   --background-overlay-background: rgba(33, 150, 243, 0.9);
+  --border-color: rgba(33, 33, 33, 0.2);
 }
 
 .visually-hidden {
@@ -564,8 +565,10 @@ img {
   display: flex;
 }
 
-.header__society__item {
-  display: flex;
+.header__society__item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid var(--border-color);
+  margin-right: 10px;
 }
 
 .header__society__link {
@@ -697,6 +700,25 @@ img {
 .modal-svg-link:hover .modal-close-link,
 .modal-svg-link:focus .modal-close-link {
   fill: var(--accent-color);
+}
+
+.menu__svg__link {
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  border: none;
+  background-color: var(--contacts-color);
+  top: 21px;
+  right: 25px;
+}
+
+.menu__svg__link:hover .menu__close__link,
+.menu__svg__link:focus .menu__close__link {
+  fill: var(--accent-color);
+}
+
+.menu__close__link {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header {

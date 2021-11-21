@@ -60,7 +60,11 @@
   display: flex;
 }
 .header__society__item {
-  display: flex;
+  &:not(:last-child) {
+    padding-right: 10px;
+    border-right: 1px solid var(--border-color);
+    margin-right: 10px;
+  }
 }
 .header__society__link {
   @include fonts(18px, 500, 1.22, 0.02em);
