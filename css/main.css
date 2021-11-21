@@ -716,7 +716,7 @@ img {
   height: 33px;
   border: none;
   background-color: var(--contacts-color);
-  top: 21px;
+  top: 0;
   right: 25px;
 }
 
