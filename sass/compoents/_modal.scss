@@ -2,9 +2,9 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 530px;
+  width: 100%;
   padding: 40px;
-  min-height: 580px;
+  height: 100%;
   background-color: var(--contacts-color);
   transform: translate(-50%, -50%) scale(1);
   transition: transform 3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -13,6 +13,14 @@
     margin-bottom: 12px;
     @include fonts(20px, 700, 1.15, 0.03em);
     color: var(--primary-text-color);
+  }
+  @media screen and (max-width: 1199px) {
+    width: 450px;
+    height: 609px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 530px;
+    height: 580px;
   }
 }
 .modal-label {
