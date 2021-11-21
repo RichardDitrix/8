@@ -1,4 +1,5 @@
 .header__modal {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -6,17 +7,25 @@
   height: 100vh;
   min-height: 796px;
   background-color: var(--contacts-color);
+  padding-top: 48px;
+  padding-bottom: 48px;
   .container {
     padding-left: 40px;
     padding-right: 40px;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    position: relative;
   }
+}
+.is-open {
+  display: block;
 }
 // 1st UL
 .header__modal__list {
 }
 .header__modal__item {
+  &:not(:last-child) {
+    margin-bottom: 36px;
+  }
+
   @include fonts(40px, 500, 1.74, 0.02em);
 }
 .header__modal__link {

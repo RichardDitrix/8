@@ -490,6 +490,7 @@ img {
 }
 
 .header__modal {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -497,13 +498,18 @@ img {
   height: 100vh;
   min-height: 796px;
   background-color: var(--contacts-color);
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .header__modal .container {
   padding-left: 40px;
   padding-right: 40px;
-  padding-top: 48px;
-  padding-bottom: 48px;
+  position: relative;
+}
+
+.is-open {
+  display: block;
 }
 
 .header__modal__item {
@@ -511,6 +517,10 @@ img {
   font-weight: 500;
   line-height: 1.74;
   letter-spacing: 0.02em;
+}
+
+.header__modal__item:not(:last-child) {
+  margin-bottom: 36px;
 }
 
 .header__modal__link {
