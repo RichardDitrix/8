@@ -407,6 +407,7 @@ img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
+  overflow-y: scroll;
   transition: opacity 3s cubic-bezier(0.4, 0, 0.2, 1), visibility 3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
