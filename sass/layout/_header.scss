@@ -1,5 +1,5 @@
 .header {
-  padding: 10px 0px;
+  padding: 15px 0px;
   border-bottom: 1px solid var(--border-color);
   @media screen and (min-width: 1200px) {
     padding: 25px 0px;
@@ -10,8 +10,12 @@
   align-items: center;
 }
 .header__logo {
-  margin-right: 95px;
+  margin-right: 88px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
+
 .web {
   font-family: Raleway;
   @include fonts(24px, 700, 1.16, 0.03em);
@@ -68,28 +72,40 @@
   margin-left: auto;
 }
 .header__contacts {
-  //   display: flex;
   display: none;
   @media screen and (min-width: 768px) {
     display: flex;
+    margin-left: auto;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
   }
 }
 .header__contacts__list:not(:last-child) {
-  margin-right: 50px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
 }
 .header__adress {
-  @include fonts(14px, 500, 1.14, 0.02em);
+  display: flex;
+  align-items: center;
+  @include fonts(12px, 500, 1.16, 0.02em);
   color: var(--header-text-color);
+  @media screen and (min-width: 1200px) {
+    @include fonts(14px, 500, 1.14, 0.02em);
+  }
 }
 .header__svg__link {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
 }
 .header__svg {
   fill: currentColor;
   display: flex;
-  margin-right: 10px;
+  margin-right: 8px;
 }
