@@ -491,32 +491,34 @@ img {
 }
 
 .header__modal {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
+  padding-top: 48px;
+  padding-bottom: 48px;
   background-color: var(--contacts-color);
 }
 
+.header__modal.is-open {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .header__modal .container {
-  padding-top: 48px;
-  padding-bottom: 48px;
   padding-left: 40px;
   padding-right: 40px;
   position: relative;
   display: flex;
   flex-direction: column;
+  min-height: 450px;
   height: 100%;
 }
 
-.header__modal_bottom {
+.header__modal__bottom {
   margin-top: auto;
-}
-
-.is-open {
-  display: block;
 }
 
 .header__modal__item {
