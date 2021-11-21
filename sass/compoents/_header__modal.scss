@@ -7,9 +7,10 @@
   height: 100vh;
   min-height: 796px;
   background-color: var(--contacts-color);
-  padding-top: 48px;
-  padding-bottom: 48px;
+
   .container {
+    padding-top: 48px;
+    padding-bottom: 48px;
     padding-left: 40px;
     padding-right: 40px;
     position: relative;
@@ -24,6 +25,7 @@
 .header__modal__item {
   &:not(:last-child) {
     margin-bottom: 36px;
+    height: 48px;
   }
 
   @include fonts(40px, 500, 1.74, 0.02em);
@@ -36,8 +38,12 @@
 }
 // 2nd UL
 .header__modal__contacts {
+  margin-bottom: 64px;
 }
 .header__modal__contacts__list {
+  &:not(:last-child) {
+    margin-bottom: 36px;
+  }
   color: var(--primary-text-color);
 }
 .header__modal__phone {
@@ -57,6 +63,7 @@
   display: flex;
 }
 .header__society__link {
+  @include fonts(18px, 500, 1.22, 0.02em);
   color: var(--link-color);
 }
 .header__mobile__menu {

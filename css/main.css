@@ -498,11 +498,11 @@ img {
   height: 100vh;
   min-height: 796px;
   background-color: var(--contacts-color);
-  padding-top: 48px;
-  padding-bottom: 48px;
 }
 
 .header__modal .container {
+  padding-top: 48px;
+  padding-bottom: 48px;
   padding-left: 40px;
   padding-right: 40px;
   position: relative;
@@ -521,6 +521,7 @@ img {
 
 .header__modal__item:not(:last-child) {
   margin-bottom: 36px;
+  height: 48px;
 }
 
 .header__modal__link {
@@ -531,8 +532,16 @@ img {
   color: var(--accent-color);
 }
 
+.header__modal__contacts {
+  margin-bottom: 64px;
+}
+
 .header__modal__contacts__list {
   color: var(--primary-text-color);
+}
+
+.header__modal__contacts__list:not(:last-child) {
+  margin-bottom: 36px;
 }
 
 .header__modal__phone {
@@ -560,6 +569,10 @@ img {
 }
 
 .header__society__link {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
   color: var(--link-color);
 }
 
