@@ -497,7 +497,6 @@ img {
   left: 0;
   width: 100vw;
   height: 100vh;
-  min-height: 796px;
   background-color: var(--contacts-color);
 }
 
@@ -507,6 +506,13 @@ img {
   padding-left: 40px;
   padding-right: 40px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header__modal_bottom {
+  margin-top: auto;
 }
 
 .is-open {
@@ -542,7 +548,7 @@ img {
 }
 
 .header__modal__contacts__list:not(:last-child) {
-  margin-bottom: 36px;
+  margin-bottom: 32px;
 }
 
 .header__modal__phone {

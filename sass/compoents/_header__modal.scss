@@ -5,16 +5,20 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  min-height: 796px;
   background-color: var(--contacts-color);
-
   .container {
     padding-top: 48px;
     padding-bottom: 48px;
     padding-left: 40px;
     padding-right: 40px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
+}
+.header__modal_bottom {
+  margin-top: auto;
 }
 .is-open {
   display: block;
@@ -27,7 +31,6 @@
     margin-bottom: 36px;
     height: 48px;
   }
-
   @include fonts(40px, 500, 1.74, 0.02em);
 }
 .header__modal__link {
@@ -36,13 +39,14 @@
 .current__menu {
   color: var(--accent-color);
 }
+
 // 2nd UL
 .header__modal__contacts {
   margin-bottom: 64px;
 }
 .header__modal__contacts__list {
   &:not(:last-child) {
-    margin-bottom: 36px;
+    margin-bottom: 32px;
   }
   color: var(--primary-text-color);
 }
