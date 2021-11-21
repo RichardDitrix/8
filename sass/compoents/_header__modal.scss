@@ -1,12 +1,13 @@
 .header__modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 530px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   padding: 40px;
   min-height: 580px;
   background-color: var(--contacts-color);
-  transform: translate(-50%, -50%) scale(1);
+  transform: scale(1);
   transition: transform 3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 // 1st UL
@@ -24,13 +25,13 @@
 .header__modal__contacts__list {
   color: var(--primary-text-color);
 }
-.header__modal__emailadress {
-  @include fonts(24px, 500, 1.16, 0.02em);
-  color: var(--header-text-color);
-}
 .header__modal__phone {
   color: var(--link-color);
   @include fonts(34px, 500, 1.17, 0.02em);
+}
+.header__modal__emailadress {
+  @include fonts(24px, 500, 1.16, 0.02em);
+  color: var(--header-text-color);
 }
 
 // 3d UL
