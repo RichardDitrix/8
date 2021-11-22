@@ -9,7 +9,7 @@
     @include fonts(14px, 0, 1.71, 0.01em);
   }
 }
-.input-checkbox {
+.input__checkbox {
   position: absolute;
   -webkit-appearance: none;
   &:focus + .check-box,
@@ -34,12 +34,12 @@
     left: 54px;
   }
 }
-.span-modal {
+.modal__span {
   margin-left: 16px;
   @media screen and (min-width: 1200px) {
     margin-left: 8px;
   }
 }
-.checkbox-link {
+.ckeckbox__link {
   color: var(--web-color);
 }

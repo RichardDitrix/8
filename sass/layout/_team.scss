@@ -2,7 +2,7 @@
   background-color: var(--img-background-color);
   margin: 0 auto;
 }
-.duty-team {
+.duty__team {
   text-align: center;
   margin-bottom: 30px;
   @include fonts(28px, 700, 1.17, 0.03em);
@@ -13,7 +13,7 @@
   }
 }
 //ul
-.duty-team-list {
+.duty__team-list {
   margin-bottom: -30px;
   @media screen and (min-width: 768px) {
     display: flex;
@@ -24,7 +24,7 @@
   }
 }
 // li
-.duty-style-list {
+.duty__style__list {
   margin-bottom: 30px;
   background-color: var(--nav-text-color);
   border-radius: 0px 0px 4px 4px;
@@ -39,7 +39,7 @@
   }
 }
 
-.team-name {
+.duty__team__name {
   padding: 30px 0px;
   text-align: center;
 }

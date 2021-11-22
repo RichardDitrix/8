@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
 }
-.overlay-text {
+.overlay__text {
   position: absolute;
   opacity: 1;
   width: 100%;
@@ -20,6 +20,6 @@
   @include fonts(18px, 400, 1.56, 0.03em);
 }
 
-.portfolio-style-list:hover .overlay-text {
+.portfolio__style__item:hover .overlay__text {
   transform: translateY(0);
 }

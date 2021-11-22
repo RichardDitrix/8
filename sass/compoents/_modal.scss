@@ -23,16 +23,16 @@
     height: 580px;
   }
 }
-.modal-label {
+.modal__label {
   @include fonts(12px, 400, 1.16, 0.01em);
   color: var(--secondary-text-color);
 }
-.modal-text {
+.modal__text {
   display: block;
   margin-top: 10px;
   margin-bottom: 4px;
 }
-.modal-input-svg {
+.modal__input__svg {
   position: relative;
 }
 .svg-form {
@@ -42,7 +42,7 @@
   left: 15px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-input {
+.modal__input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);

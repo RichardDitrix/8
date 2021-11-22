@@ -5,16 +5,16 @@
   }
 }
 
-.duty-list {
+.duty__list {
   display: flex;
 }
-.duty-img {
+.duty__list__img {
   position: relative;
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
-.duty-text {
+.duty__list__description {
   display: flex;
   position: absolute;
   justify-content: center;
