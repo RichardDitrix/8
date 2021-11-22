@@ -1208,7 +1208,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .duty-style-list {
-    flex-basis: calc(100% / 2 - 20px);
+    flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
   }
 }
