@@ -83,7 +83,7 @@
     flex-direction: row;
   }
 }
-.header__contacts__list:not(:last-child) {
+.contacts__list:not(:last-child) {
   @media screen and (min-width: 1200px) {
     margin-right: 50px;
   }
@@ -97,7 +97,7 @@
     @include fonts(14px, 500, 1.14, 0.02em);
   }
 }
-.header__svg__link {
+.contact__link {
   width: 100%;
   height: 100%;
   display: flex;

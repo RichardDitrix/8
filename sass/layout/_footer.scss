@@ -20,7 +20,7 @@
     justify-content: space-around;
   }
 }
-.footer_adress {
+.footer__adress {
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
   }
@@ -50,17 +50,17 @@
 .footer__item:not(:last-child) {
   margin-bottom: 9px;
 }
-.footer__adress__text {
+.footer__adresstext {
   font-family: Roboto;
   font-style: normal;
   @include fonts(14px, 400, 1.71, 0.03em);
   color: var(--contacts-color);
 }
-.footer_link {
+.footer__link {
   font-family: Roboto;
   font-style: normal;
   @include fonts(14px, 400, 1.71, 0.03em);
-  color: var(--footer_link-color);
+  color: var(--footer__link-color);
 }
 // svg__footer
 .footer__flex {
@@ -71,7 +71,7 @@
     margin-right: 93px;
   }
 }
-.footer__flex__h3 {
+.felx__h3 {
   color: var(--contacts-color);
   margin-bottom: 20px;
   @include fonts(14px, 700, 1.14, 0.03em);
@@ -79,18 +79,18 @@
     text-align: center;
   }
 }
-.footer__flex__list {
+.footer__flexlist {
   display: flex;
   justify-content: center;
 }
-.footer__flex_item {
+.footer__flexitem {
   width: 44px;
   height: 44px;
   &:not(:last-child) {
     margin-right: 10px;
   }
 }
-.footer__flex__link {
+.flexlink__svg {
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.1);
@@ -104,12 +104,12 @@
     background-color: var(--accent-color);
   }
 }
-.footer__flex__link__svg {
+.svg__flexlink {
   fill: #ffffff;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer__flex__link:hover .footer__flex__link__svg,
-.footer__flex__link:focus .footer__flex__link__svg {
+.flexlink__svg:hover .svg__flexlink,
+.flexlink__svg:focus .svg__flexlink {
   fill: var(--nav-text-color);
 }
 // footer__form
@@ -174,7 +174,7 @@
     background-color: var(--btn-spec-color);
   }
 }
-.footer__label__svg {
+.footer__labelsvg {
   margin-left: 10px;
   fill: var(--nav-text-color);
 }

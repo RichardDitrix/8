@@ -8,13 +8,13 @@
 .duty__list {
   display: flex;
 }
-.duty__list__img {
+.duty__img {
   position: relative;
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
-.duty__list__description {
+.duty__description {
   display: flex;
   position: absolute;
   justify-content: center;

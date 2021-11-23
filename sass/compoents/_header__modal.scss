@@ -1,4 +1,4 @@
-.header__modal {
+.mobile__modal {
   position: fixed;
   z-index: 10;
   top: 0;
@@ -33,21 +33,21 @@
   }
 }
 
-.header__modal__bottom {
+.mobile__bottom {
   margin-top: auto;
 }
 
 // 1st UL
-.header__modal__list {
+.mobile__list {
 }
-.header__modal__item {
+.mobile__item {
   &:not(:last-child) {
     margin-bottom: 36px;
     height: 48px;
   }
   @include fonts(40px, 500, 1.74, 0.02em);
 }
-.header__modal__link {
+.mobile__link {
   color: var(--primary-text-color);
 }
 .current__menu {
@@ -55,40 +55,40 @@
 }
 
 // 2nd UL
-.header__modal__contacts {
+.mobile__contacts {
   margin-bottom: 64px;
 }
-.header__modal__contacts__list {
+.mobile__list {
   &:not(:last-child) {
     margin-bottom: 32px;
   }
   color: var(--primary-text-color);
 }
-.header__modal__phone {
+.mobile__phone {
   color: var(--link-color);
   @include fonts(34px, 500, 1.17, 0.02em);
 }
-.header__modal__emailadress {
+.mobile__emailadress {
   @include fonts(24px, 500, 1.16, 0.02em);
   color: var(--header-text-color);
 }
 
 // 3d UL
-.header__modal__society {
+.mobile__society {
   display: flex;
 }
-.header__society__item {
+.societ__item {
   &:not(:last-child) {
     padding-right: 10px;
     border-right: 1px solid var(--border-color);
     margin-right: 10px;
   }
 }
-.header__society__link {
+.societ__link {
   @include fonts(18px, 500, 1.22, 0.02em);
   color: var(--link-color);
 }
-.header__mobile__menu {
+.mobile__button {
   width: 40px;
   height: 40px;
   border: none;
@@ -99,14 +99,14 @@
   position: absolute;
   right: 15px;
   cursor: pointer;
-  &:hover .header__mobile__menu--open,
-  &:focus .header__mobile__menu--open {
+  &:hover .mobile__button--open,
+  &:focus .mobile__button--open {
     fill: var(--accent-color);
   }
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
-.header__mobile__menu--open {
+.mobile__button--open {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
