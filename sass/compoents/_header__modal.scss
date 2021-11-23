@@ -76,6 +76,7 @@
 // 3d UL
 .mobile__society {
   display: flex;
+  flex-wrap: wrap;
 }
 .societ__item {
   &:not(:last-child) {

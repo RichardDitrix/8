@@ -606,6 +606,7 @@ img {
 
 .mobile__society {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .societ__item:not(:last-child) {
@@ -1547,12 +1548,6 @@ img {
 
 .footer__contacts {
   margin-top: 20px;
-}
-
-@media screen and (max-width: 1199px) {
-  .footer__contacts {
-    margin-bottom: 60px;
-  }
 }
 
 .footer__item:not(:last-child) {
