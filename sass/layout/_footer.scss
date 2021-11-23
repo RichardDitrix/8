@@ -19,6 +19,10 @@
     margin-bottom: 60px;
     justify-content: space-around;
   }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 .footer__adress {
   @media screen and (max-width: 767px) {
@@ -45,7 +49,10 @@
 }
 .footer__contacts {
   margin-top: 20px;
-  margin-bottom: 60px;
+
+  @media screen and(max-width: 1199px) {
+    margin-bottom: 60px;
+  }
 }
 .footer__item:not(:last-child) {
   margin-bottom: 9px;
