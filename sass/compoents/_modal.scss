@@ -14,7 +14,11 @@
     @include fonts(20px, 700, 1.15, 0.03em);
     color: var(--primary-text-color);
   }
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 479px) {
+    max-width: 450px;
+    height: 609px;
+  }
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
     width: 450px;
     height: 609px;
   }

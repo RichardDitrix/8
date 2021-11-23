@@ -443,7 +443,14 @@ img {
   color: var(--primary-text-color);
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 479px) {
+  .modal {
+    max-width: 450px;
+    height: 609px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .modal {
     width: 450px;
     height: 609px;
